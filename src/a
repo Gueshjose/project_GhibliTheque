@@ -1,0 +1,9 @@
+{ props.favoris===true ?
+                        <div className='absolute  bg-[rgba(255,255,255,0.4)]  z-10 top-0 p-6'>
+                             <FontAwesomeIcon icon="fa-solid fa-star" className="text-xl  text-yellow-400 z-20" />
+                            </div>
+                            :
+                            <div className='absolute  bg-[rgba(255,255,255,0.4)]  z-10 top-0 p-6'>
+                            <FontAwesomeIcon icon="fa-solid fa-star" className="text-xl  border-solid border-yellow-400 z-20" /> >
+                            </div>
+                        }

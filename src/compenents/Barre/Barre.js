@@ -8,7 +8,7 @@ function Barre() {
         <div className="App">
             <div className="flex barre">
                 <div>
-                    <input name="Entrez le nom du film"></input>
+                    <input className="shadow-sm bg-slate-100 border-0 shadow-slate-600 rounded-lg" name="Entrez le nom du film"></input>
                 </div>
                 <div>
                     <button>Filtre</button>
