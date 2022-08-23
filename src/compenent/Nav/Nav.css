@@ -1,0 +1,15 @@
+.flex{
+    display: flex;
+}
+p{
+    font-size: 30px;
+}
+.jus{
+    justify-content: space-around;
+}
+.gap{
+    gap: 2rem;
+}
+.App{
+    padding-top: 10px;
+}
