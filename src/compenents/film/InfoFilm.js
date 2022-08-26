@@ -42,19 +42,19 @@ function InfoFilm(props){
 
                 </div>
             </div>
-            <div className=' w-full  '>
+            <div className=' w-full h-[40vh] '>
                 <div className=" w-1/4 absolute top-[18vh] left-36 ">
                     <img src={props.films[params.id].image} className="shadow-[-15px_-12px_25px_black] w-full h-full rounded-md border-gray-200 border-2 -skew-y-6" alt="" />
                 </div>
                 
 
                 <div className="relative p-3 grid grid-cols-12 mt-12">
-                   <blockquote  className='relative rounded-md text-gray-500 italic  bg-slate-100 col-start-6 col-span-5 text-justify text-xl p-5 border-[1px] border-transparent shadow-md shadow-black'>
-                        <FontAwesomeIcon icon={faQuoteLeft} className="text-5xl  text-gray-500 absolute top-[-4vh]"  /> 
+                   <blockquote  className='relative rounded-md text-gray-500 italic  bg-slate-100 col-start-6 col-span-5 text-justify dark:bg-[#201F39] dark:text-slate-50  text-xl p-5 border-[1px] border-transparent shadow-md shadow-black'>
+                        <FontAwesomeIcon icon={faQuoteLeft} className="text-5xl  text-gray-500  dark:text-slate-50 absolute top-[-4vh]"  /> 
                         {props.films[params.id].description}  
-                        <FontAwesomeIcon icon={faQuoteRight} className="text-5xl  text-gray-500 absolute bottom-[-4vh] right-5 "  /> 
+                        <FontAwesomeIcon icon={faQuoteRight} className="text-5xl  text-gray-500  dark:text-slate-50 absolute bottom-[-4vh] right-5 "  /> 
                     </blockquote>
-                    <p className="absolute text-xl font-bold text-rose-800 top-[-65vh] left-[91vw] z-20 drop-shadow-[1px_1px_1px_rgba(0, 0, 0, 0.8)]" >
+                    <p className="absolute text-xl font-bold text-rose-800 top-[-65vh] left-[91vw] z-20 drop-shadow-[1px_1px_1px_rgba(0, 0, 0, 0.8)] bg-[rgba(255,255,255,0.2)]" >
                       SCORE:  {props.films[params.id].rt_score}
                     </p> 
                 </div>

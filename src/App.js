@@ -14,6 +14,7 @@ function App() {
   const [api, setApi]=useState([])
   const [searchWord, setSearch]=useState("")
   const [films, dispatch]= useReducer(setFilms,[])
+  const [mode, setMode]=useState('lightMode')
 
   const fetchData= () => {
      axios.get('https://ghibliapi.herokuapp.com/films').then(response => {
@@ -23,14 +24,23 @@ function App() {
     .catch(error => console.log(error))
 
 }
-
-
+  const changeMode=()=>{
+    if(mode==='lightMode'){
+      document.querySelector('body').classList.remove('dark')
+      
+     } else{
+      document.querySelector('body').classList.add('dark')
+     }
+  }
 
   useEffect(() => {
 
       try {
-        
+        console.log(mode);
+        console.log(document.querySelector('body').classList);
          fetchData();
+         changeMode()
+         
           
       } catch (error) {
           console.log(error)
@@ -41,11 +51,11 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="App h-full bg-gray-400 dark:bg-[#161618]">
 
-      <Nav />
+      <Nav changeMode={setMode} mode={mode} />
       <Routes>
-        <Route  path='/' element={<Accueil search={setSearch} word={searchWord} setFilms={dispatch}  films={films} api={api}  />} />
+        <Route  path='/' element={<Accueil  search={setSearch} word={searchWord} setFilms={dispatch}  films={films} api={api}  />} />
         <Route path='/Info-Film/:id' element={<InfoFilm setFavoris={dispatch}  films={films} />} />
       </Routes>
 

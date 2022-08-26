@@ -11,7 +11,7 @@ function Film(props) {
     
     return (
         
-        <div className='rounded-md  border-2 border-[ridge]] bg-slate-100 border-slate-400 shadow-md shadow-slate-600  hover:scale-110 hover:bg-orange-600 hover:border-yellow-500 hover:shadow-lg hover:text-slate-200 hover:shadow-yellow-500 '>
+        <div className='rounded-md  border-2 border-[ridge]] bg-slate-100 border-slate-400 shadow-md shadow-slate-600 dark:bg-[#201F39] dark:text-slate-50  hover:scale-110  hover:border-yellow-500 dark:hover:border-gray-800 hover:shadow-lg  hover:shadow-yellow-500 dark:hover:shadow-blue-900 '>
                 <div className='relative'>
                     <img src={props.image} alt="" />
                     { props.favoris===true ?
