@@ -1,5 +1,5 @@
 
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import './App.css';
 import Accueil from "./compenents/Accueil";
 import InfoFilm from "./compenents/film/InfoFilm";
@@ -12,17 +12,19 @@ import {  useEffect, useState,  useReducer } from "react";
 
 function App() {
   const [api, setApi]=useState([])
+  const [searchWord, setSearch]=useState("")
   const [films, dispatch]= useReducer(setFilms,[])
 
   const fetchData= () => {
      axios.get('https://ghibliapi.herokuapp.com/films').then(response => {
         setApi(response.data);
-        setFilms(films)
 
     })
     .catch(error => console.log(error))
 
 }
+
+
 
   useEffect(() => {
 
@@ -36,12 +38,14 @@ function App() {
 
   })
 
+
+
   return (
     <div className="App">
 
       <Nav />
       <Routes>
-        <Route  path='/' element={<Accueil  setFilms={dispatch}  films={films} api={api}  />} />
+        <Route  path='/' element={<Accueil search={setSearch} word={searchWord} setFilms={dispatch}  films={films} api={api}  />} />
         <Route path='/Info-Film/:id' element={<InfoFilm setFavoris={dispatch}  films={films} />} />
       </Routes>
 
