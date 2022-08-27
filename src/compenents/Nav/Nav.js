@@ -15,10 +15,10 @@ function Nav( props) {
                 </div>
                 <div className="flex gap-28 items-center">
                     <Link to="./">
-                        <p className="text-2xl cursor-ghibliC hover:drop-shadow-[0_4px_6px_rgba(0,0,0,0.95)] font-semibold">Accueil</p>
+                        <p className="text-2xl cursor-ghibliC hover:drop-shadow-[0_4px_6px_rgba(0,0,0,0.95)] font-semibold">Home</p>
                     </Link>
                     <Link to='./favoris'>
-                        <p className="text-2xl cursor-ghibliC hover:drop-shadow-[0_4px_6px_rgba(0,0,0,0.95)] font-semibold">Favoris</p>
+                        <p className="text-2xl cursor-ghibliC hover:drop-shadow-[0_4px_6px_rgba(0,0,0,0.95)] font-semibold">Favorites</p>
                     </Link>
                 </div>
 

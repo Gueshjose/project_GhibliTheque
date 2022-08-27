@@ -36,8 +36,6 @@ function App() {
   useEffect(() => {
 
       try {
-        console.log(mode);
-        console.log(document.querySelector('body').classList);
          fetchData();
          changeMode()
          
@@ -51,7 +49,7 @@ function App() {
 
 
   return (
-    <div className="App h-full bg-gray-400 dark:bg-[#161618]">
+    <div className="App h-[110%] bg-blue-100 dark:bg-[#161618]">
 
       <Nav changeMode={setMode} mode={mode} />
       <Routes>
