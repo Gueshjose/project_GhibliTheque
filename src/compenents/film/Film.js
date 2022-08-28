@@ -1,5 +1,6 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import {  faInfoCircle, faStar } from '@fortawesome/free-solid-svg-icons';
 import {Link} from "react-router-dom";
 
@@ -26,11 +27,11 @@ function Film(props) {
                     
                 </div>
                 <div className='m-2 relative '>
-                    <h4 className='text-center font-bold underline m-2'>{props.title.toUpperCase()}</h4>
-                    <p className='text-left text-sm'><span className='font-semibold underline'>Release Date :</span> {props.release}</p>
-                    <p className='text-left text-sm'><span className='font-semibold underline'>Duration :</span> {Math.floor(props.duration/60) + " h " + props.duration%60} min.</p>
+                    <h4 className='text-center text-[5vw] md:text-[1.2vw] font-bold underline m-2'>{props.title.toUpperCase()}</h4>
+                    <p className='text-left text-[3.6vw] md:text-[0.9vw]'><span className='font-semibold underline'>Release Date :</span> {props.release}</p>
+                    <p className='text-left text-[3.6vw] md:text-[0.9vw]'><span className='font-semibold underline'>Duration :</span> {Math.floor(props.duration/60) + " h " + props.duration%60} min.</p>
                     <Link to={`/Info-Film/${props.id}`}>
-                        <FontAwesomeIcon icon={faInfoCircle} className=" absolute top-10 left-56 text-3xl   hover:scale-125 cursor-ghibliC "  /> 
+                        <FontAwesomeIcon icon={faInfoCircle} className=" absolute text-[8vw] top-[8vh] left-[70vw] md:top-[4.5vh] md:left-[14vw] md:text-[2vw]   hover:scale-125 cursor-ghibliC "  /> 
                     </Link>
                 </div>
         </div>

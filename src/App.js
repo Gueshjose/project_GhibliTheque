@@ -4,6 +4,7 @@ import './App.css';
 import Accueil from "./compenents/Accueil";
 import InfoFilm from "./compenents/film/InfoFilm";
 import Nav from './compenents/Nav/Nav';
+import Burger from "./compenents/Nav/Burger";
 import axios from "axios";
 
 import {  useEffect, useState,  useReducer } from "react";
@@ -49,9 +50,10 @@ function App() {
 
 
   return (
-    <div className="App h-[110%] bg-blue-100 dark:bg-[#161618]">
+    <div className="App w-full h-[100%] bg-blue-100 dark:bg-[#161618]  ">
 
       <Nav changeMode={setMode} mode={mode} />
+      <Burger changeMode={setMode} mode={mode} />
       <Routes>
         <Route  path='/' element={<Accueil  search={setSearch} word={searchWord} setFilms={dispatch}  films={films} api={api}  />} />
         <Route path='/Info-Film/:id' element={<InfoFilm setFavoris={dispatch}  films={films} />} />

@@ -5,10 +5,10 @@ import Barre from './Barre/Barre';
 
 function Accueil(props) {
     return (
-        <div className='w-full h-full py-5'>
+        <div className='w-full h-full py-[5vh]'>
              
       <Barre search={props.search} />
-        <div className='w-[80%] h-full grid grid-cols-4 gap-8 mx-auto my-12'>
+        <div className='lg:w-[80%] w-[85%]  h-full grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mx-auto my-[5vh]'>
             {props.api.map((film, index)=>{
                if (props.films.length<22){
                     props.films[index]=film

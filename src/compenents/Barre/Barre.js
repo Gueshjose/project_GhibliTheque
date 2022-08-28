@@ -12,12 +12,12 @@ function Barre(props) {
         
     }
     return (
-        <div className="App">
-            <div className="flex barre">
-                <div className="relative"> 
+        <div className=" w-[80%] mx-auto">
+            <div className="grid grid-cols-12 md:grid-rows-1 grid-rows-2 w-full">
+                <div className="relative md:col-start-2 md:col-end-7 col-start-2 col-end-12 text-[2.5vw]  md:text-[1vw] "> 
                 
-                    <input type="text" className="shadow-sm bg-slate-100 border-0 cursor-ghibliC shadow-slate-600 dark:bg-[#201F39] dark:text-slate-50 rounded-lg pl-8 py-2" name="Search Bar" placeholder="Search your movie" onChange={changeWord} />
-                    <FontAwesomeIcon icon={faMagnifyingGlass} className="absolute left-2 top-5 text-lg  dark:text-slate-50" />
+                    <input type="text" className="shadow-sm  bg-slate-100 border-0 cursor-ghibliC shadow-slate-600 dark:bg-[#201F39] dark:text-slate-50 rounded-lg pl-7 w-full py-2" name="Search Bar" placeholder="Search your movie" onChange={changeWord} />
+                    <FontAwesomeIcon icon={faMagnifyingGlass} className="absolute left-[1vw] top-[1.6vh] text-base  dark:text-slate-50" />
                     
                 </div>
                 <Filter />
