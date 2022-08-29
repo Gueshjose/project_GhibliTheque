@@ -15,12 +15,12 @@ function InfoFilm(props){
                         <div className='absolute  z-10 md:top-[13vh] top-1 left-2 p-1'>
                              <FontAwesomeIcon icon={faStar} className=" md:text-[2.5vw] text-[8vw] cursor-ghibliC text-yellow-400 z-20 hover:scale-125 hover:text-yellow-100" onClick={()=>props.setFavoris({ type: 'notFavoris', payload: {id: params.id}})}  />
                              { props.films[params.id].see===true ?
-                                    <div className='absolute  z-10 top-[8vh] left-[1vw] '>
-                                        <FontAwesomeIcon icon={faEye} className="tmd:text-[2.5vw] text-[8vw] cursor-ghibliC text-cyan-400 z-20 hover:scale-125 hover:text-cyan-100" onClick={()=>props.setFavoris({ type: 'notViewed', payload: {id: params.id}})}  />
+                                    <div className='absolute  z-10 top-[8vh] left-[0.5vw] '>
+                                        <FontAwesomeIcon icon={faEye} className="md:text-[2.5vw] text-[8vw] cursor-ghibliC text-cyan-400 z-20 hover:scale-125 hover:text-cyan-100" onClick={()=>props.setFavoris({ type: 'notViewed', payload: {id: params.id}})}  />
                              
                                     </div> 
                                     :
-                                    <div className='absolute    z-10 top-[8vh] left-[1vw]  '>
+                                    <div className='absolute    z-10 top-[8vh] left-[0.5vw]  '>
                                         <FontAwesomeIcon icon={faEye} className="md:text-[2.5vw] text-[8vw] cursor-ghibliC  text-[rgba(255,255,255,0.6)] hover:scale-125  z-20 hover:text-cyan-200 " onClick={()=>props.setFavoris({ type: 'viewed', payload: {id:params.id}})} /> 
                                     </div>
                             }
