@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/project_GhibliTheque/static/css/main.b40ec7f4.css",
+    "main.js": "/project_GhibliTheque/static/js/main.24f99b41.js",
+    "static/media/studio.png": "/project_GhibliTheque/static/media/studio.82be1e360473ab818958.png",
+    "static/media/totoro.cur": "/project_GhibliTheque/static/media/totoro.478ad8bef80209ea636f.cur",
+    "index.html": "/project_GhibliTheque/index.html",
+    "main.b40ec7f4.css.map": "/project_GhibliTheque/static/css/main.b40ec7f4.css.map",
+    "main.24f99b41.js.map": "/project_GhibliTheque/static/js/main.24f99b41.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b40ec7f4.css",
+    "static/js/main.24f99b41.js"
+  ]
+}
