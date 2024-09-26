@@ -61,10 +61,10 @@ function App() {
       <Nav changeMode={setMode} mode={mode} />
       <Burger changeMode={setMode} mode={mode} />
       <Routes>
-        <Route  path='/' element={<Accueil  search={setSearch} word={searchWord} setFilms={dispatch}  films={films} api={api} />} />
-        <Route  path='/Favoris' element={<Favoris  search={setSearch} word={searchWord} setFilms={dispatch}  films={films} api={api} />} />
+        <Route  path='/project_GhibliTheque' element={<Accueil  search={setSearch} word={searchWord} setFilms={dispatch}  films={films} api={api} />} />
+        <Route  path='project_GhibliTheque/Favoris' element={<Favoris  search={setSearch} word={searchWord} setFilms={dispatch}  films={films} api={api} />} />
 
-        <Route path='/Info-Film/:id' element={<InfoFilm setFavoris={dispatch}  films={films} />} />
+        <Route path='project_GhibliTheque/Info-Film/:id' element={<InfoFilm setFavoris={dispatch}  films={films} />} />
       </Routes>
 
     </div>
