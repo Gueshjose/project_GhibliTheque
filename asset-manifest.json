@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.e25eecec.css",
-    "main.js": "/static/js/main.b2c4b685.js",
-    "static/media/studio.png": "/static/media/studio.82be1e360473ab818958.png",
-    "static/media/totoro.cur": "/static/media/totoro.478ad8bef80209ea636f.cur",
-    "index.html": "/index.html",
-    "main.e25eecec.css.map": "/static/css/main.e25eecec.css.map",
-    "main.b2c4b685.js.map": "/static/js/main.b2c4b685.js.map"
+    "main.css": "/project_GhibliTheque/static/css/main.b40ec7f4.css",
+    "main.js": "/project_GhibliTheque/static/js/main.00ab48bc.js",
+    "static/media/studio.png": "/project_GhibliTheque/static/media/studio.82be1e360473ab818958.png",
+    "static/media/totoro.cur": "/project_GhibliTheque/static/media/totoro.478ad8bef80209ea636f.cur",
+    "index.html": "/project_GhibliTheque/index.html",
+    "main.b40ec7f4.css.map": "/project_GhibliTheque/static/css/main.b40ec7f4.css.map",
+    "main.00ab48bc.js.map": "/project_GhibliTheque/static/js/main.00ab48bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.e25eecec.css",
-    "static/js/main.b2c4b685.js"
+    "static/css/main.b40ec7f4.css",
+    "static/js/main.00ab48bc.js"
   ]
 }
