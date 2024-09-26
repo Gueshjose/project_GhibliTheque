@@ -17,10 +17,10 @@ function Barre(props) {
                 <div className="relative md:col-start-2 md:col-end-7 col-start-2 col-end-12 text-[2.5vw]  md:text-[1vw] "> 
                 
                     <input type="text" className="shadow-sm  bg-slate-100 border-0 cursor-ghibliC shadow-slate-600 dark:bg-[#201F39] dark:text-slate-50 rounded-lg pl-7 w-full py-2" name="Search Bar" placeholder="Search your movie" onChange={changeWord} />
-                    <FontAwesomeIcon icon={faMagnifyingGlass} className="absolute left-[1vw] top-[1.6vh] text-base  dark:text-slate-50" />
+                    <FontAwesomeIcon icon={faMagnifyingGlass} className="absolute left-[0.5vw] top-[1.6vh] text-base  dark:text-slate-50" />
                     
                 </div>
-                <Filter />
+                <Filter filter={props.filter} />
             </div>
         </div>
     );

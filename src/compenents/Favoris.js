@@ -1,9 +1,9 @@
 
 
-import Film from './film/Film'
+import Film from './film/FilmFav'
 import Barre from './Barre/Barre';
 
-function Accueil(props) {
+function Favoris(props) {
     return (
         <div className='w-full h-full py-[5vh]'>
              
@@ -12,8 +12,6 @@ function Accueil(props) {
             {props.api.map((film, index)=>{
                if (props.films.length<22){
                     props.films[index]=film
-                    props.films[index].favoris=false  
-                    props.films[index].see=false 
                     
                }
                return( 
@@ -27,4 +25,4 @@ function Accueil(props) {
 
     }
 
-export default Accueil;
+export default Favoris;
