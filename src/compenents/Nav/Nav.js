@@ -14,7 +14,7 @@ function Nav( props) {
                     <img className="w-full dark:invert mt-[1vh] " src={studio} alt="" />
                 </div>
                 <div className="flex gap-28 items-center ">
-                    <Link to="/project_GhibliTheque">
+                    <Link to="project_GhibliTheque/">
                         <p className="text-[2vw] cursor-ghibliC hover:drop-shadow-[0_4px_6px_rgba(0,0,0,0.95)] dark:hover:drop-shadow-[0_4px_6px_rgba(255,255,255,0.95)] font-semibold z-10 relative">
                             HOME
                             <FontAwesomeIcon icon={faHome} className="text-[3.5vw] absolute top-[-0.8vw] left-[4vw] opacity-20 "  />
@@ -22,7 +22,7 @@ function Nav( props) {
                         </p>
 
                     </Link>
-                    <Link to='/project_GhibliTheque/Favoris'>
+                    <Link to='project_GhibliTheque/Favoris/'>
                         <p className="text-[2vw] cursor-ghibliC hover:drop-shadow-[0_4px_6px_rgba(0,0,0,0.95)] dark:hover:drop-shadow-[0_4px_6px_rgba(255,255,255,0.95)] font-semibold z-10 relative">
                             FAVORITES
                             <FontAwesomeIcon icon={faStar} className="text-[3.5vw] absolute top-[-0.8vw] left-[8.5vw] opacity-20"  />
